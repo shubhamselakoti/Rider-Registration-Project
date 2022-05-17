@@ -1,41 +1,21 @@
-<%- include('partials/header') %>
-<div class="container mt-5">
-  <h1>Register</h1>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
 
-          <!-- Makes POST request to /register route -->
-          <form action="/register" method="POST">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="btn btn-dark">Register</button>
-          </form>
 
+<div class="registerYourTrip" id="registerYourTrip">
+    <img class="registerYourTripImg" src="css/Harley3.png" alt="">
+    <div class="textContainer">
+        <span>Register Your Ride</span>
+        <div class="registerForm">
+            <form action="/" method="post" autocomplete="off">
+                <input type="text" name="riderName" placeholder="Your Name" id="riderName" required>
+                <input type="email" name="riderEmail" placeholder="Your E-mail Id" id="email" required>
+
+                <input type="number" name="riderAge" placeholder="Age(Optional)" onkeypress="return onlyNumberKey(event)" required>
+                <input type="number" name="riderPhone" placeholder="Phone No.(Optional)" onkeypress="return onlyNumberKey(event)" required>
+                <input type="text" name="riderPro" placeholder="Profession(Optional)"> <br>
+                <i id="result"></i>
+                <input id="regButton" type="submit" value="Register Ride" onclick="sendPage()">
+            </form>
         </div>
-      </div>
     </div>
-
-    <!-- <div class="col-sm-4">
-      <div class="card social-block">
-        <div class="card-body">
-          <a class="btn btn-block" href="/auth/google" role="button">
-            <i class="fab fa-google"></i>
-            Sign Up with Google
-          </a>
-        </div>
-      </div>
-    </div> -->
-
-  </div>
 </div>
-
-<%- include('partials/header') %>

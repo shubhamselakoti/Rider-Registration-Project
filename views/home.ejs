@@ -1,16 +1,32 @@
-<%- include('partials/header') %>
+<%- include("header") -%>
 
 
-<div class="jumbotron centered">
-  <div class="container">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Secrets</h1>
-    <p class="lead">Don't keep your secrets, share them anonymously!</p>
-    <hr>
-    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
-    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+    <div class="firstPage">
+        <div class="navBar">
+            <ul>
+                <li><a href="#contact">Connect</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ourInitiative">Our Initiative</a></li> 
+                <li><a href="#nextEvent">Next Event</a></li>
+                <li><a href="#home">Home</a></li>    
+            </ul>
+        </div>
 
-  </div>
-</div>
+        <img class="firstPageImg" src="css/Harley2.png" alt="">
+        
+                <div class="textContainer">
+                    <i> Eplore The World Together</i>
+                    <br>
+                    <a href="#ourInitiative"><span class="button">Check Out Our Organized Events</span></a>
+                </div>
+    </div>
 
-<%- include('partials/footer') %>
+
+    <%- include("nextEvent") -%>
+    <%- include("ourInitiative") -%>
+    <%- include("mobilePage") -%>
+    <%- include("register") -%>
+    
+    
+
+    <%- include("footer") -%>
