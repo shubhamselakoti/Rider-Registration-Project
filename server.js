@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect("mongodb+srv://selakoti-shubham:SezPiMuKste8WtIe@riders-database.xecvk.mongodb.net/ridersDB");
+mongoose.connect();
 
 
 app.get("/", function(req, res) {
